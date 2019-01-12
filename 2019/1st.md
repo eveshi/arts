@@ -4,7 +4,8 @@
 [https://leetcode.com/problems/longest-substring-without-repeating-characters/]
 
 我的解法：
-`var lengthOfLongestSubstring = function(s) {
+```
+var lengthOfLongestSubstring = function(s) {
     let length = 0
     const sLength = s.length
     let i = 0
@@ -38,10 +39,10 @@
     }
     return longest;
 };
-`
+```
 我遇到的问题：1. 我的算法复杂度是n方，所以是很慢的。2. 想法是把新的string记下来，然后等于是数新string的长度，但是好像很容易算错，因为数字太多，来来去去就晕了，所以试了很多遍。
 别人的解法：
-`
+```
 // 1
 public class Solution {
     public int lengthOfLongestSubstring(String s) {
@@ -76,10 +77,10 @@ public class Solution {
         }
         return max;
     }
-`
+```
 思考：这个是之前了解过的hashset，可以大大节省查找时间，而且可以直接用contain的函数来查找，而不是我用for来一个个比对
 我优化后的解法：
-`
+```
 var lengthOfLongestSubstring = function(s) {
     if(s.length == 0) return 0;
     let left_i = 0
@@ -97,7 +98,7 @@ var lengthOfLongestSubstring = function(s) {
     }
     return length
 };
-`
+```
 再反思：还应该注意的就是特殊情况，诸如输入长度为0。以及结果是否加1，因为长度要包含头尾，如果是相减，那么就一定要加一才会是总长度。
 
 ### Review
