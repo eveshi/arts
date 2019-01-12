@@ -1,6 +1,8 @@
 ## 2019 week1
 ### Algorithm
-这周的题目：3. Longest Substring Without Repeating Characters [https://leetcode.com/problems/longest-substring-without-repeating-characters/]
+这周的题目：3. Longest Substring Without Repeating Characters
+[https://leetcode.com/problems/longest-substring-without-repeating-characters/]
+
 我的解法：
 `var lengthOfLongestSubstring = function(s) {
     let length = 0
